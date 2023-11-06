@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+
+        .header {
+            background-color: deepskyblue;
+            color: white;
+            margin-top: 0;
+            padding: 20px 20px 20px 40px;
+        }
+
+        a{
+            text-decoration: none;   
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: white;
+        }
+
+        button{
+            background-color: deepskyblue;
+            border-radius: 4px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome!</h1>
+        <h4>(Created by Sergio Navarro)</h4>
+    </div>
+    
+    <p><br></p>
+
+    <h3> - Para ver la información del user-agent pulse aquí:</h3>
+    <button>
+        <h3><a href="{% url 'info' %}">👉INFO👈</a></h3>
+    </button>
+
+    <p><br><br></p>
+
+    <h3> - Para ver más información sobre el dispositivo desde el que accede pulse aquí:</h3>
+    <button>
+        <h3><a href="{% url 'visit' %}">👉VISIT👈</a></h3>
+    </button>
+    
+</body>
+</html>
